@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { HeroSection } from "./components/hero-section";
+import MySkills from "./components/skills";
 
 export default function Home() {
   return (
@@ -11,6 +12,8 @@ export default function Home() {
       transition={{ duration: 0.8, delay: 0.2 }}
     >
       <HeroSection />
+      <MySkills/>
+      
     </motion.div>
 
   );

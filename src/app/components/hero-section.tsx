@@ -42,7 +42,7 @@ export function HeroSection() {
     }
 
     return (
-        <section className="relative min-h-screen overflow-hidden container mx-auto  px-6 py-16 bg-image " 
+        <section className="relative min-h-[700px] overflow-hidden container mx-auto  px-6 py-16 bg-image " 
         >
 
             {/* Main Content */}
