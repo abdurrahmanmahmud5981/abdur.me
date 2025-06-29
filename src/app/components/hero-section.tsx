@@ -42,7 +42,8 @@ export function HeroSection() {
     }
 
     return (
-        <section className="relative min-h-screen overflow-hidden container mx-auto  px-6 py-16 ">
+        <section className="relative min-h-screen overflow-hidden container mx-auto  px-6 py-16 bg-image " 
+        >
 
             {/* Main Content */}
             <div className="relative z-10 flex  ">
@@ -50,11 +51,11 @@ export function HeroSection() {
                     {/* Main Heading - exact text layout */}
                     <div className="mb-12">
                         <motion.div variants={itemVariants} className="mb-6">
-                            <h1 className="text-7xl  font-bold text-black leading-none tracking-tight flex items-center flex-wrap">
+                            <h1 className="text-7xl  font-bold  leading-none tracking-tight flex items-center flex-wrap">
                                 Trusted{" "}
                                 <motion.span
                                     variants={highlightVariants}
-                                    className="inline-block bg-black text-white px-6 py-3 rounded-3xl mx-2"
+                                    className="inline-block bg-black dark:bg-white text-white dark:text-black px-6 py-3 rounded-3xl mx-2"
                                 >
                                     Partner
                                 </motion.span>{" "}
@@ -62,11 +63,11 @@ export function HeroSection() {
                             </h1>
                         </motion.div>
                         <motion.div variants={itemVariants}>
-                            <h1 className="text-7xl font-bold text-black leading-none tracking-tight flex items-center flex-wrap">
+                            <h1 className="text-7xl font-bold  leading-none tracking-tight flex items-center flex-wrap">
                                 Your Website{" "}
                                 <motion.span
                                     variants={highlightVariants}
-                                    className="inline-block bg-black text-white px-6 py-3 rounded-3xl mx-2"
+                                    className="inline-block bg-black dark:bg-white text-white dark:text-black px-6 py-3 rounded-3xl mx-2"
                                 >
                                     Develop.
                                 </motion.span>
@@ -97,22 +98,22 @@ export function HeroSection() {
                     <div className="flex flex-col  items-start gap-6  mt-6">
                         {/* Vertical text */}
                         <div
-                            className=" font-medium text-gray-800 tracking-wider text-start"
+                            className=" font-medium  tracking-wider text-start"
                         >
                             @williamey
                         </div>
 
                         {/* Vertical line */}
                         <div className="flex items-center justify-center gap-2   ">
-                            <div className="w-8 h-1 bg-black "></div>
+                            <div className="w-8 h-1 bg-black dark:bg-white "></div>
 
                             {/* Social icons */}
                             <div className="flex gap-3">
                                 <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} className="cursor-pointer">
-                                    <Instagram className="w-4 h-4 text-gray-700" />
+                                    <Instagram className="w-4 h-4 " />
                                 </motion.div>
                                 <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} className="cursor-pointer">
-                                    <svg className="w-4 h-4 text-gray-700" viewBox="0 0 24 24" fill="currentColor">
+                                    <svg className="w-4 h-4 " viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                                     </svg>
                                 </motion.div>
@@ -133,7 +134,7 @@ export function HeroSection() {
                         <Button
                             size="lg"
                             variant="outline"
-                            className="rounded-full h-14 w-48 mt-10 border-2 border-black"
+                            className="rounded-full h-16 w-48 mt-10 border-2 border-black"
                         >
                             <Phone className="!w-10 !h-10 mr-3 ring-2  rounded-full p-1.5 -m-6 " />
                             Schedule a Call
