@@ -21,8 +21,8 @@ export function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen)
 
   return (
-    <nav className="sticky top-0 z-50 w-full  bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60   ">
-      <div className="mx-5">
+    <nav className="sticky top-0 z-50 w-full  bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/90">
+      <div className="  mx-auto max-w-7xl  ">
         <div className="flex border-b px-5 py-5 rounded-bl-[30px] rounded-br-[30px] items-center justify-between">
           {/* Logo */}
           <motion.div
@@ -69,9 +69,13 @@ export function Navbar() {
               transition={{ duration: 0.5, delay: 0.5 }}
             >
               <Link href="/">
-                <Button variant="outline" className=" rounded-full w-40 h-12 flex items-center justify-center space-x-2">
-                  <ArrowRight className="border border-black rounded-full h-12 w-12" />
-                  <span>Start Project</span>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="rounded-full h-16 w-40 border-2 border-black"
+                >
+                  <ArrowRight className="!w-10 !h-10  mr-3 ring-2  rounded-full p-1.5 -ml-3 " />
+                  Start Project
                 </Button>
               </Link>
             </motion.div>
@@ -131,10 +135,14 @@ export function Navbar() {
                   className="mt-4"
                 >
                   <Link href="/">
-                    <Button variant="outline" className=" rounded-full w-full h-12 flex items-center justify-center space-x-2">
-                      <ArrowRight className="border border-black rounded-full h-12 w-12" />
-                      <span>Start Project</span>
-                    </Button>
+                    <Button
+                  size="lg"
+                  variant="outline"
+                  className="rounded-full h-14 w-full border-2 border-black"
+                >
+                  <ArrowRight className="!w-10 !h-10 mr-3 ring-2  rounded-full p-1.5 -m-10 " />
+                  Start Project
+                </Button>
                   </Link>
                 </motion.div>
               </div>
