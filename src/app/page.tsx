@@ -1,5 +1,6 @@
 "use client"
 
+
 import { motion } from "framer-motion"
 
 import dynamic from 'next/dynamic';
@@ -10,7 +11,7 @@ const MySkills = dynamic(() => import('./_components/skills'), { ssr: false });
 const AboutSection = dynamic(() => import('./_components/about/about'), { ssr: false });
 const WorkProcessSection = dynamic(() => import('./_components/work-process/work-process'), { ssr: false });
 const ContactSection = dynamic(() => import('./_components/contact/contac-section'), { ssr: false });
-
+const Footer = dynamic(()=> import("@/components/footer"), { ssr: false });
 export default function Home() {
   return (
     <motion.div
@@ -24,6 +25,7 @@ export default function Home() {
 
       <WorkProcessSection />
       <ContactSection />
+      <Footer />
     </motion.div>
 
   );
