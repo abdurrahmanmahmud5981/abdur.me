@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
-import { ArrowRight, Menu, X } from "lucide-react"
+import {  Menu, X } from "lucide-react"
 import { ModeToggle } from "@/components/mode-toggle"
 import { Button } from "@/components/ui/button"
 
@@ -68,15 +68,16 @@ export function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              <Link href="/">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="rounded-full h-16 w-40 border-2 border-black"
-                >
-                  <ArrowRight className="!w-10 !h-10  mr-3 ring-2 dark:ring-muted  rounded-full p-1.5 -ml-3 " />
-                  Start Project
-                </Button>
+              <Link className="flex items-center justify-center space-x-2 bg-white text-black hover:bg-primary hover:text-muted transition-colors duration-200 px-4 py-2 font-semibold gap-0.5 rounded-full border-2 border-black hover:border-primary cursor-pointer shadow-md hover:shadow-lg"
+                href="/">
+
+                <svg className="-ml-4" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.5" y="0.5" width="37" height="37" rx="18.5" fill="white" stroke="black" />
+                  <path d="M8 18.5H30M30 18.5C27.5905 18.0455 22.7714 15.9091 22.7714 11M30 18.5C27.5905 18.9545 22.7714 21.0909 22.7714 26" stroke="black" strokeWidth="1.5" strokeLinejoin="round" />
+                </svg>
+               
+                <span className="text-lg ml-1">Start Project</span>
+
               </Link>
             </motion.div>
           </div>
@@ -134,15 +135,16 @@ export function Navbar() {
                   transition={{ duration: 0.5, delay: 0.5 }}
                   className="mt-4"
                 >
-                  <Link href="/">
-                    <Button
-                  size="lg"
-                  variant="outline"
-                  className="rounded-full h-14 w-full border-2 border-black"
-                >
-                  <ArrowRight className="!w-10 !h-10 mr-3 ring-2  rounded-full p-1.5 -m-10 " />
-                  Start Project
-                </Button>
+                  <Link className="flex items-center justify-center space-x-2 bg-white text-black hover:bg-primary hover:text-muted transition-colors duration-200 px-4 py-2 font-semibold gap-1.5 rounded-full border-2 border-black hover:border-primary cursor-pointer shadow-md hover:shadow-lg"
+                    href="/">
+
+                    <svg className="-ml-4" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="0.5" y="0.5" width="37" height="37" rx="18.5" fill="white" stroke="black" />
+                      <path d="M8 18.5H30M30 18.5C27.5905 18.0455 22.7714 15.9091 22.7714 11M30 18.5C27.5905 18.9545 22.7714 21.0909 22.7714 26" stroke="black" strokeWidth="1.5" strokeLinejoin="round" />
+                    </svg>
+                    {/* <ArrowRight className="!w-10 !h-10   mr-3 ring-2 dark:ring-muted  rounded-full p-1.5 -ml-3 " /> */}
+                    <span className="text-lg">Start Project</span>
+
                   </Link>
                 </motion.div>
               </div>

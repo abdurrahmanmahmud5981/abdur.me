@@ -1,6 +1,5 @@
 import React from 'react'
 import TopLeftHeader from './top-left-header'
-import {  ArrowLeft, ArrowRight } from 'lucide-react'
 
 
 const skills = [
@@ -33,8 +32,13 @@ const MySkills = () => {
 
 
             <div className="flex justify-end gap-6">
-                <ArrowLeft size={44} className='ring-2 rounded-full p-2'/>
-                <ArrowRight size={44} className='ring-2 rounded-full p-2'/>
+                <svg width="140" height="60" viewBox="0 0 140 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="80.5" y="0.5" width="59" height="59" rx="29.5" fill="black" stroke="white" />
+                    <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" fill="black" stroke="white" />
+                    <path d="M92 30H128M128 30C124.057 29.2727 116.171 25.8545 116.171 18M128 30C124.057 30.7273 116.171 34.1455 116.171 42" stroke="white" stroke-strokeWidth="2" strokeLinejoin="round" />
+                    <path d="M48 30H12M12 30C15.9429 29.2727 23.8286 25.8545 23.8286 18M12 30C15.9429 30.7273 23.8286 34.1455 23.8286 42" stroke="white" strokeWidth="2" strokeLinejoin="round" />
+                </svg>
+
             </div>
             {/*  */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-28">

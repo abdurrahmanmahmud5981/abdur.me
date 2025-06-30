@@ -1,7 +1,7 @@
 import React from 'react'
 import TopLeftHeader from '../top-left-header'
 import Link from 'next/link'
-import { ArrowRightIcon } from 'lucide-react'
+
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 
@@ -52,9 +52,14 @@ const WorkProcessSection = () => {
                             <Badge className=' text-lg text-black bg-teal-100 
                             group-hover:bg-neutral-900 group-hover:text-white
                             rounded-full px-4 font-medium'>{item.step}</Badge>
-                            <Link href={'/'} className='flex items-center text-white text-lg font-semibold group-hover:text-black transition-colors duration-300'>
-                               
-                                <ArrowRightIcon className='mr-3' />
+                            <Link href={'/'} className='flex items-center text-white text-lg font-semibold group-hover:text-black transition-colors duration-300 gap-2.5'>
+
+                                <svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 7.5H22M22 7.5C19.5905 7.04545 14.7714 4.90909 14.7714 0M22 7.5C19.5905 7.95455 14.7714 10.0909 14.7714 15" 
+                                    className='group-hover:stroke-black'
+                                    stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+
                                 <span className='cursor-pointer hover:underline'>Read More</span>
                             </Link>
                         </CardHeader>

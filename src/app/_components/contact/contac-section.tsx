@@ -52,8 +52,8 @@ const ContactSection = () => {
 
 
     return (
-        <div className='space-y-8 container mx-auto my-16 bg-gradient-to-br from-gray-100 via-green-100 to-lime-300 relative overflow-hidden px-6 py-10 rounded-3xl'>
-
+        <div className='space-y-8 container mx-auto my-16 bg-gradient-to-br from-gray-100 via-green-100 to-lime-400 relative overflow-hidden px-6 py-10 rounded-3xl '>
+            <div className=" absolute top-0 b w-full h-[673px] bg-radial-[at_51%_164%] from-lime-400 from 22% via-teal-300/0 via 65% to-neutral-900/0 blur-[34px] -rotate-180 -z-30"></div>
 
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 ">
                 <div className="space-y-4">
