@@ -33,7 +33,7 @@ const WorkProcessSection = () => {
     return (
         <section className='p-16  bg-neutral-900 text-white rounded-[40px] space-y-8 container mx-auto mb-10'>
             <div className=" relative  gap-8">
-                <div className="lg:absolute top-4 left-0 flex items-center justify-center">
+                <div className="xl:absolute top-4 left-0 flex items-center justify-center">
                     <TopLeftHeader label='Work Process' />
                 </div>
                 <h2 className="flex-1 text-center text-6xl font-bold leading-[86px]">My Work Process</h2>
