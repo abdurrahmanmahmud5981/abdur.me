@@ -3,8 +3,10 @@
 import { motion } from "framer-motion"
 import { Phone, Instagram } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import type { Variants } from "framer-motion";
 
-export function HeroSection() {
+
+const HeroSection = () => {
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
@@ -16,33 +18,32 @@ export function HeroSection() {
         },
     }
 
-    const itemVariants = {
+    const itemVariants: Variants = {
         hidden: { opacity: 0, y: 50 },
         visible: {
             opacity: 1,
             y: 0,
             transition: {
-                duration: 0.8,
-                ease: "easeInOut", // use a valid string for ease
+                duration: 0.5,
+                ease: "easeInOut" as const, // ✅ fix for TS
             },
         },
-    }
-
-    const highlightVariants = {
+    };  
+    const highlightVariants: Variants = {
         hidden: { opacity: 0, scale: 0.9 },
         visible: {
             opacity: 1,
             scale: 1,
             transition: {
                 duration: 0.6,
-                ease: "easeOut",
+                ease: "easeOut" as const, // ✅ fix for TS
                 delay: 0.3,
             },
         },
-    }
+    };
 
     return (
-        <section className="relative min-h-[700px] overflow-hidden container mx-auto  px-6 py-16 bg-image " 
+        <section className="relative min-h-[700px] overflow-hidden container mx-auto  px-6 py-16 bg-image "
         >
 
             {/* Main Content */}
@@ -143,3 +144,5 @@ export function HeroSection() {
         </section>
     )
 }
+
+export default HeroSection;

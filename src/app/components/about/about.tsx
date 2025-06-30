@@ -2,6 +2,10 @@
 import { ArrowDown } from 'lucide-react'
 import React from 'react'
 import { motion } from "framer-motion"
+
+import type { Variants } from "framer-motion";
+
+
 const AboutSection = () => {
 
     const containerVariants = {
@@ -15,30 +19,29 @@ const AboutSection = () => {
         },
     }
 
-    const itemVariants = {
+    const itemVariants: Variants = {
         hidden: { opacity: 0, y: 50 },
         visible: {
             opacity: 1,
             y: 0,
             transition: {
-                duration: 0.8,
-                ease: "easeInOut", // use a valid string for ease
+                duration: 0.5,
+                ease: "easeInOut" as const, // ✅ fix for TS
             },
         },
-    }
-
-    const highlightVariants = {
+    };
+    const highlightVariants: Variants = {
         hidden: { opacity: 0, scale: 0.9 },
         visible: {
             opacity: 1,
             scale: 1,
             transition: {
                 duration: 0.6,
-                ease: "easeOut",
+                ease: "easeOut" as const, // ✅ fix for TS
                 delay: 0.3,
             },
         },
-    }
+    };
 
 
     return (
@@ -87,7 +90,7 @@ const AboutSection = () => {
 
                 </motion.div>
             </div>
-          
+
         </section>
     )
 }

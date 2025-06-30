@@ -3,9 +3,10 @@
 import { motion } from "framer-motion"
 
 import dynamic from 'next/dynamic';
-import { HeroSection } from "./components/hero-section";
 
 
+
+const HeroSection = dynamic(() => import('./components/hero-section'), { ssr: false });
 const MySkills = dynamic(() => import('./components/skills'), { ssr: false });
 const AboutSection = dynamic(() => import('./components/about/about'), { ssr: false });
 const WorkProcessSection = dynamic(() => import('./components/work-process/work-process'), { ssr: false });
