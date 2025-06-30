@@ -31,24 +31,24 @@ const process = [
 
 const WorkProcessSection = () => {
     return (
-        <section className='p-16  bg-neutral-900 text-white rounded-[40px] space-y-8 container mx-auto mb-10'>
+        <section className=' py-5 px-3 sm:p-16  bg-neutral-900 text-white rounded-[40px] space-y-8 container mx-auto mb-10'>
             <div className=" relative  gap-8">
                 <div className="xl:absolute top-4 left-0 flex items-center justify-center">
                     <TopLeftHeader label='Work Process' />
                 </div>
-                <h2 className="flex-1 text-center text-6xl font-bold leading-[86px]">My Work Process</h2>
+                <h2 className="flex-1 text-center text-3xl sm:text-6xl font-bold leading-[86px]">My Work Process</h2>
             </div>
 
 
             {/*  */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-24">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:mt-24">
                 {process.map((item, ind) => (
                     <Card key={ind} className="w-full bg-black rounded-[30px] 
                    border-none hover:rotate-6 hover:bg-lime-300 hover:text-black transition-all duration-300 ease-in-out shadow-lg hover:shadow-2xl  py-7 flex flex-col justify-between items-start
                    hover:cursor-pointer hover:transition-all
                     group
                     ">
-                        <CardHeader className="flex justify-between items-center w-full">
+                        <CardHeader className="flex flex-col sm:flex-row gap-4 justify-between items-center w-full">
                             <Badge className=' text-lg text-black bg-teal-100 
                             group-hover:bg-neutral-900 group-hover:text-white
                             rounded-full px-4 font-medium'>{item.step}</Badge>
@@ -57,7 +57,7 @@ const WorkProcessSection = () => {
                                 <svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0 7.5H22M22 7.5C19.5905 7.04545 14.7714 4.90909 14.7714 0M22 7.5C19.5905 7.95455 14.7714 10.0909 14.7714 15" 
                                     className='group-hover:stroke-black'
-                                    stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                                    stroke="white" strokeWidth="1.5" strokeLinejoin="round" />
                                 </svg>
 
                                 <span className='cursor-pointer hover:underline'>Read More</span>

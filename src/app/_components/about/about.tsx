@@ -64,11 +64,11 @@ const AboutSection = () => {
                     {/* Main Heading - exact text layout */}
                     <div className=" ">
                         <motion.div variants={itemVariants} className="mb-6 max-w-5xl mx-auto flex flex-col gap-5">
-                            <h1 className="text-7xl  font-bold  flex flex-wrap gap-6 items-center justify-center ">
+                            <h1 className=" text-3xl sm:text-7xl  font-bold  flex flex-wrap gap-6 items-center justify-center ">
                                 I’ve been
                                 <motion.span
                                     variants={highlightVariants}
-                                    className="inline-block bg-black dark:bg-white text-white dark:text-black px-6 py-3 rounded-3xl mx-2"
+                                    className="sm:inline-block bg-black dark:bg-white text-white dark:text-black px-6 py-3 rounded-3xl mx-2"
                                 >
                                     Developing
                                 </motion.span>{" "}

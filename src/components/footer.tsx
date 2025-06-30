@@ -4,7 +4,7 @@ import { FC } from "react";
 
 const Footer: FC = () => {
     return (
-        <footer className="bg-black text-white px-10 py-16 rounded-t-3xl md:rounded-[48px] my-10 container mx-auto">
+        <footer className="bg-black text-white px-5 sm:px-10 py-16 rounded-t-3xl rounded-[48px] my-10 container mx-auto">
 
             <div className="grid grid-cols-1  lg:grid-cols-7 gap-4 mb-8">
                 <div className="lg:col-span-3 ">
@@ -23,7 +23,7 @@ const Footer: FC = () => {
                     <div className="">
 
 
-                        <div className="my-40 text-start flex flex-col md:flex-row  justify-between ml-2">
+                        <div className="md:my-40 text-start flex flex-col md:flex-row  justify-between md:ml-2 gap-5">
                             <div>
                                 <h3 className="text-muted-foreground font-semibold mb-2">Say hello</h3>
                                 <ul className="space-y-1">

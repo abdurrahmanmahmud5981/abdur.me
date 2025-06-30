@@ -52,7 +52,7 @@ const HeroSection = () => {
                     {/* Main Heading - exact text layout */}
                     <div className="mb-12">
                         <motion.div variants={itemVariants} className="mb-6">
-                            <h1 className="text-7xl  font-bold  leading-none tracking-tight flex items-center flex-wrap">
+                            <h1 className="text-4xl md:text-7xl  font-bold  leading-none tracking-tight flex items-center flex-wrap">
                                 Trusted{" "}
                                 <motion.span
                                     variants={highlightVariants}
@@ -64,7 +64,7 @@ const HeroSection = () => {
                             </h1>
                         </motion.div>
                         <motion.div variants={itemVariants}>
-                            <h1 className="text-7xl font-bold  leading-none tracking-tight flex items-center flex-wrap">
+                            <h1 className=" text-4xl md:text-7xl font-bold  leading-none tracking-tight flex items-center flex-wrap">
                                 Your Website{" "}
                                 <motion.span
                                     variants={highlightVariants}
@@ -80,7 +80,7 @@ const HeroSection = () => {
                 </motion.div>
             </div>
             {/* Description text - exact content */}
-            <motion.div variants={itemVariants} className="  flex justify-between gap-20 ">
+            <motion.div variants={itemVariants} className="  flex flex-col md:flex-row justify-between  gap-6 md:gap-20 ">
 
 
                 {/* Exact gradient background to match image */}
@@ -91,7 +91,7 @@ const HeroSection = () => {
                     initial={{ opacity: 0, x: -30 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, delay: 1 }}
-                    className="items-end -rotate-90"
+                    className="items-end md:-rotate-90"
                 >
                     <div className="flex flex-col  items-start gap-6  mt-6">
                         {/* Vertical text */}

@@ -22,11 +22,11 @@ const skills = [
 const MySkills = () => {
 
     return (
-        <section className='p-16 bg-black text-white rounded-[40px] space-y-8 container mx-auto mb-10'>
+        <section className='py-6 px-4 sm:p-16 bg-black text-white rounded-[40px] space-y-8 container mx-auto mb-10'>
             <TopLeftHeader label='Why Choose me' />
 
-            <div className="flex flex-col lg:flex-row justify-between lg:gap-36">
-                <h2 className=" lg:max-w-xl justify-start  text-6xl font-bold leading-20 ">My Extensive List of Skills</h2>
+            <div className="flex flex-col lg:flex-row justify-between lg:gap-36 gap-6 ">
+                <h2 className=" lg:max-w-xl justify-start text-3xl  sm:text-6xl font-bold sm:leading-20 ">My Extensive List of Skills</h2>
                 <p className=" lg:max-w-xl border-b-4 border-b-muted-foreground lg:text-right text-xl leading-loose">Building the worlds best marketing Your trusted partner for strategy, design, and dev.</p>
             </div>
 
@@ -35,15 +35,15 @@ const MySkills = () => {
                 <svg width="140" height="60" viewBox="0 0 140 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="80.5" y="0.5" width="59" height="59" rx="29.5" fill="black" stroke="white" />
                     <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" fill="black" stroke="white" />
-                    <path d="M92 30H128M128 30C124.057 29.2727 116.171 25.8545 116.171 18M128 30C124.057 30.7273 116.171 34.1455 116.171 42" stroke="white" stroke-strokeWidth="2" strokeLinejoin="round" />
+                    <path d="M92 30H128M128 30C124.057 29.2727 116.171 25.8545 116.171 18M128 30C124.057 30.7273 116.171 34.1455 116.171 42" stroke="white" strokeWidth="2" strokeLinejoin="round" />
                     <path d="M48 30H12M12 30C15.9429 29.2727 23.8286 25.8545 23.8286 18M12 30C15.9429 30.7273 23.8286 34.1455 23.8286 42" stroke="white" strokeWidth="2" strokeLinejoin="round" />
                 </svg>
 
             </div>
             {/*  */}
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-28">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:mt-28">
                 {skills.map((skill, ind) => (
-                    <div key={ind} className=" w-full bg-white/10 rounded-[30px] p-9 hover:rotate-6 duration-300">
+                    <div key={ind} className=" w-full bg-white/10 rounded-[30px] p-4 sm:p-9 hover:rotate-6 duration-300">
                         <div className="size-24 relative">
                             <div className="w-24 h-7 left-0 top-[34.50px] absolute rounded-full  outline-2 outline-offset-[-1px] outline-white"></div>
                             <div className="w-24 h-7 left-[11.26px] top-[84px] absolute origin-top-left rotate-[-60deg] rounded-full  outline-2 outline-offset-[-1px] outline-white"></div>
