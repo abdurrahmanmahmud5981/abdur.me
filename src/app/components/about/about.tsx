@@ -2,7 +2,7 @@
 import { ArrowDown } from 'lucide-react'
 import React from 'react'
 import { motion } from "framer-motion"
-const AboutSectio = () => {
+const AboutSection = () => {
 
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -92,4 +92,4 @@ const AboutSectio = () => {
     )
 }
 
-export default AboutSectio
+export default AboutSection

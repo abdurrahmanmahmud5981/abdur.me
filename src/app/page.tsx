@@ -1,10 +1,14 @@
 "use client"
 
 import { motion } from "framer-motion"
+
+import dynamic from 'next/dynamic';
 import { HeroSection } from "./components/hero-section";
-import MySkills from "./components/skills";
-import AboutSectio from "./components/about/about";
-import WorkProcessSection from "./components/work-process/work-process";
+
+
+const MySkills = dynamic(() => import('./components/skills'), { ssr: false });
+const AboutSection = dynamic(() => import('./components/about/about'), { ssr: false });
+const WorkProcessSection = dynamic(() => import('./components/work-process/work-process'), { ssr: false });
 
 export default function Home() {
   return (
@@ -14,10 +18,10 @@ export default function Home() {
       transition={{ duration: 0.8, delay: 0.2 }}
     >
       <HeroSection />
-      <MySkills/>
-      <AboutSectio/>
+      <MySkills />
+      <AboutSection />
 
-      <WorkProcessSection/>
+      <WorkProcessSection />
     </motion.div>
 
   );
