@@ -76,9 +76,6 @@ export function HeroSection() {
                     </div>
 
 
-
-                    {/* CTA Button - exact styling */}
-
                 </motion.div>
             </div>
             {/* Description text - exact content */}

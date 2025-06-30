@@ -3,6 +3,8 @@
 import { motion } from "framer-motion"
 import { HeroSection } from "./components/hero-section";
 import MySkills from "./components/skills";
+import AboutSectio from "./components/about/about";
+import WorkProcessSection from "./components/work-process/work-process";
 
 export default function Home() {
   return (
@@ -13,7 +15,9 @@ export default function Home() {
     >
       <HeroSection />
       <MySkills/>
-      
+      <AboutSectio/>
+
+      <WorkProcessSection/>
     </motion.div>
 
   );

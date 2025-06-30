@@ -3,7 +3,7 @@ import React from 'react'
 
 const TopLeftHeader = ({ label }: { label: string }) => {
     return (
-        <div className='flex items-center gap-2'>
+        <div className='flex items-center'>
             <span className=" border-2 rounded-full p-2.5">
                 <ArrowDown size={20} />
             </span>
