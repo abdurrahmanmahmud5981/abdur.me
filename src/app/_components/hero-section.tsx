@@ -134,7 +134,9 @@ const HeroSection = () => {
                             variant="outline"
                             className="rounded-full h-16 w-48 mt-10 border-2 border-black"
                         >
-                            <Phone className="!w-10 !h-10 mr-3 ring-2  rounded-full p-1.5 -m-6 " />
+                            <span className="p-1.5 ring-2 ring-black   rounded-full  -m-6 !w-10 !h-10 mr-3 flex items-center justify-center">
+                                <Phone size={30}  fill="black"/>
+                            </span>
                             Schedule a Call
                         </Button>
                     </motion.div>

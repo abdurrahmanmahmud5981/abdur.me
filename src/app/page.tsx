@@ -5,11 +5,11 @@ import { motion } from "framer-motion"
 import dynamic from 'next/dynamic';
 
 
-
 const HeroSection = dynamic(() => import('./_components/hero-section'), { ssr: false });
 const MySkills = dynamic(() => import('./_components/skills'), { ssr: false });
 const AboutSection = dynamic(() => import('./_components/about/about'), { ssr: false });
 const WorkProcessSection = dynamic(() => import('./_components/work-process/work-process'), { ssr: false });
+const ContactSection = dynamic(() => import('./_components/contact/contac-section'), { ssr: false });
 
 export default function Home() {
   return (
@@ -23,6 +23,7 @@ export default function Home() {
       <AboutSection />
 
       <WorkProcessSection />
+      <ContactSection />
     </motion.div>
 
   );
