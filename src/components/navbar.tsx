@@ -74,7 +74,7 @@ export function Navbar() {
                   variant="outline"
                   className="rounded-full h-16 w-40 border-2 border-black"
                 >
-                  <ArrowRight className="!w-10 !h-10  mr-3 ring-2  rounded-full p-1.5 -ml-3 " />
+                  <ArrowRight className="!w-10 !h-10  mr-3 ring-2 dark:ring-muted  rounded-full p-1.5 -ml-3 " />
                   Start Project
                 </Button>
               </Link>

@@ -49,7 +49,7 @@ const WorkProcessSection = () => {
                     group
                     ">
                         <CardHeader className="flex justify-between items-center w-full">
-                            <Badge className=' text-lg  bg-teal-100 text-inherit
+                            <Badge className=' text-lg text-black bg-teal-100 
                             group-hover:bg-neutral-900 group-hover:text-white
                             rounded-full px-4 font-medium'>{item.step}</Badge>
                             <Link href={'/'} className='flex items-center text-white text-lg font-semibold group-hover:text-black transition-colors duration-300'>

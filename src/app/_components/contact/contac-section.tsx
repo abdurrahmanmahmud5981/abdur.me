@@ -59,10 +59,10 @@ const ContactSection = () => {
                 <div className="space-y-4">
                     <div className="flex  max-w-5xl ">
                         <div className='flex items-center'>
-                            <span className=" border-2 border-black rounded-full p-2.5">
+                            <span className=" border-2 border-black rounded-full p-2.5 text-black">
                                 <ArrowDown size={20} />
                             </span>
-                            <span className="border-2 border-black rounded-full px-5 py-2.5">About</span>
+                            <span className="border-2 border-black rounded-full px-5 py-2.5 text-black">Contact</span>
                         </div>
                     </div>
 
@@ -78,7 +78,7 @@ const ContactSection = () => {
 
                         <motion.span
                             variants={highlightVariants}
-                            className="inline-block bg-black dark:bg-white text-white dark:text-black px-6 rounded-3xl mx-2"
+                            className="inline-block bg-black  text-white  px-6 rounded-3xl mx-2"
                         >
                             work
                         </motion.span>
@@ -94,7 +94,7 @@ const ContactSection = () => {
                         <Button
                             size="lg"
                             variant="outline"
-                            className="rounded-full h-16 w-48 bg-transparent border-2 border-black"
+                            className="rounded-full h-16 w-48 bg-transparent border-2 border-black dark:border-black dark:text-black"
                         >
                             <span className="p-1.5 ring-2 ring-black   rounded-full  -m-6 !w-10 !h-10 mr-3 flex items-center justify-center">
                                 <Phone size={30} fill="black" />
@@ -169,7 +169,7 @@ const ContactSection = () => {
                                     <Button
                                         size="lg"
                                         variant="outline"
-                                        className="rounded-full h-14   border-2 border-white bg-black text-white 0"
+                                        className="rounded-full h-14   border-2 border-white bg-black text-white 0 dark:border-white"
                                     >
                                         <span className="p-1.5 ring-2 ring-white rounded-full  -m-6 !w-10 !h-10 mr-1 flex items-center justify-center">
                                             <Send size={30} fill="white" />
@@ -185,7 +185,7 @@ const ContactSection = () => {
                                     <Button
                                         size="lg"
                                         variant="outline"
-                                        className="rounded-full h-14   border-2 border-white bg-black text-white "
+                                        className="rounded-full h-14   border-2 border-white bg-black text-white  dark:border-white"
                                     >
                                         <span className="p-1.5 ring-2 ring-white rounded-full  -m-6 !w-10 !h-10 mr-1 flex items-center justify-center">
                                             <Mail size={30} />

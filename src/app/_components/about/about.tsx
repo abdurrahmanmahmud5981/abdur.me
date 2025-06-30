@@ -51,10 +51,10 @@ const AboutSection = () => {
             {/*  */}
             <div className="flex justify-end max-w-5xl ">
                 <div className='flex items-center'>
-                    <span className=" border-2 border-black rounded-full p-2.5">
+                    <span className=" border-2 border-black dark:border-muted rounded-full p-2.5">
                         <ArrowDown size={20} />
                     </span>
-                    <span className="border-2 border-black rounded-full px-5 py-2.5">About</span>
+                    <span className="border-2 border-black dark:border-muted rounded-full px-5 py-2.5">About</span>
                 </div>
             </div>
 
