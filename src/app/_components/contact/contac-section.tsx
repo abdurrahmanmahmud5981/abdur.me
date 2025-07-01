@@ -52,17 +52,16 @@ const ContactSection = () => {
 
 
     return (
-        <div className='space-y-8 container mx-auto my-16 bg-gradient-to-br from-gray-100 via-green-100 to-lime-400 relative overflow-hidden px-3 sm:px-6 py-10 rounded-3xl '>
-            <div className=" absolute top-0 b w-full h-[673px] bg-radial-[at_51%_164%] from-lime-400 from 22% via-teal-300/0 via 65% to-neutral-900/0 blur-[34px] -rotate-180 -z-30"></div>
-
+        <div className="space-y-8 container mx-auto my-16 relative overflow-hidden px-3 sm:px-6 py-10 rounded-3xl  bg-[url('../../public/assets/contact-bg.svg')] bg-cover bg-center bg-no-repeat ">
+           
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 ">
                 <div className="space-y-4">
                     <div className="flex  max-w-5xl ">
                         <div className='flex items-center'>
-                            <span className=" border-2 border-black rounded-full p-2.5 text-black">
+                            <span className=" border-2 border-black rounded-full p-2.5 dark:border-white">
                                 <ArrowDown size={20} />
                             </span>
-                            <span className="border-2 border-black rounded-full px-5 py-2.5 text-black">Contact</span>
+                            <span className="border-2 border-black rounded-full px-5 py-2.5 dark:border-white">Contact</span>
                         </div>
                     </div>
 
@@ -71,14 +70,14 @@ const ContactSection = () => {
                         initial="hidden"
                         animate="visible"
                         className=" 
-                        text-black text-3xl sm:text-7xl font-bold sm:leading-[100px]
+                         text-3xl sm:text-7xl font-bold sm:leading-[100px]
                         "
                     >
                         Interested in 
 
                         <motion.span
                             variants={highlightVariants}
-                            className="inline-block bg-black  text-white  px-6 rounded-3xl mx-2"
+                            className="inline-block bg-black  text-white  px-6 rounded-3xl mx-2 dark:bg-white dark:text-black"
                         >
                             work
                         </motion.span>
@@ -86,7 +85,7 @@ const ContactSection = () => {
                         together?
                     </motion.h2>
 
-                    <p className=" justify-start text-black text-lg leading-loose">We start every new client interaction with an in-depth discovery call where
+                    <p className=" justify-start text-lg leading-loose">We start every new client interaction with an in-depth discovery call where
                         we get to know each other
                     </p>
 
@@ -94,9 +93,9 @@ const ContactSection = () => {
                         <Button
                             size="lg"
                             variant="outline"
-                            className="rounded-full h-16 w-48 bg-transparent border-2 border-black dark:border-black dark:text-black"
+                            className="rounded-full h-16 w-48 bg-transparent border-2 border-black dark:border-white dark:text-white"
                         >
-                            <span className="p-1.5 ring-2 ring-black   rounded-full  -m-6 !w-10 !h-10 mr-3 flex items-center justify-center">
+                            <span className="p-1.5 ring-2 ring-black dark:ring-white rounded-full  -m-6 !w-10 !h-10 mr-3 flex items-center justify-center">
                                 <Phone size={30} fill="black" />
                             </span>
                             Schedule a Call
