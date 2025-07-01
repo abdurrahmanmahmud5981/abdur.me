@@ -22,8 +22,9 @@ const skills = [
 const MySkills = () => {
 
     return (
-        <section className='py-6 px-4 sm:p-16 bg-black text-white rounded-[40px] space-y-8 container mx-auto mb-10'>
-            <TopLeftHeader label='Why Choose me' />
+        <section className='container mx-auto -my-4 z-40 relative'>
+           <div className="py-6 px-4 sm:p-14 bg-black text-white rounded-[40px] space-y-8  ">
+             <TopLeftHeader label='Why Choose me' />
 
             <div className="flex flex-col lg:flex-row justify-between lg:gap-36 gap-6 ">
                 <h2 className=" lg:max-w-xl justify-start text-3xl  sm:text-6xl font-bold sm:leading-20 ">My Extensive List of Skills</h2>
@@ -56,6 +57,7 @@ const MySkills = () => {
                     </div>
                 ))}
             </div>
+           </div>
         </section>
     )
 }
