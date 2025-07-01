@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} antialiased font-sporting-grotesque px-5`}
+        className={`${inter.variable} antialiased font-sporting-grotesque`}
       >
         <ThemeProvider
           attribute="class"
